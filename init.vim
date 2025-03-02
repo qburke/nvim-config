@@ -22,26 +22,33 @@ Plug 'neovim/nvim-lspconfig'
 Plug 'williamboman/mason.nvim'
 Plug 'williamboman/mason-lspconfig.nvim'
 
-Plug 'nvim-lua/plenary.nvim'
-Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.8' }
-" or                                , { 'branch': '0.1.x' }
-
 Plug 'hrsh7th/cmp-nvim-lsp'
 Plug 'hrsh7th/cmp-buffer'
 Plug 'hrsh7th/cmp-path'
 Plug 'hrsh7th/cmp-cmdline'
 Plug 'hrsh7th/nvim-cmp'
 
-" For vsnip users.
 Plug 'hrsh7th/cmp-vsnip'
 Plug 'hrsh7th/vim-vsnip'
+
+" Telescope
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.8' }
+" or                                , { 'branch': '0.1.x' }
+
+" Quickfix
+Plug 'kevinhwang91/nvim-bqf'
+Plug 'arsham/listish.nvim'
+Plug 'arsham/arshlib.nvim'
+
 call plug#end()
 
-" TODO buffer navigation rebindings
-" TODO error navigation
+" TODO buffer navigation rebindings: cycle for qf and prev file
+" TODO error navigation, open all errors in qf
+" TODO open term in open file location
+" TODO null-ls and disable text completions
+" TODO turn off completions for paths
 " TODO debuggers
-" TODO install quickfix menu https://github.com/arsham/listish.nvim
-" TODO open term in vim location
 
 syntax enable
 filetype plugin indent on
